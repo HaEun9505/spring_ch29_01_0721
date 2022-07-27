@@ -9,7 +9,7 @@
 <mapper namespace="com.haeun.ch2901.dao.IDao">
 	<!-- id : mapping하려는 메소드 이름, resultType(==resultSet) -->
 	<!-- 인터페이스에 선언해놓은 메소드와 mapping.  select id와 메소드 이름 반드시 동일하게 -->
-	<!-- resultType : ArrayList를 구성하고 있는 Dto 명시 -->
+	<!-- resultType : ArrayList를 구성하고 있는 Dto(클래스) 명시 -->
 	
 	<select id="listDao" resultType="com.haeun.ch2901.dto.ContentDto">
 		SELECT * FROM simple_board ORDER BY mid DESC
